@@ -1,0 +1,4 @@
+LDCXXFLAGS			:= -pthread -DFMT_HEADER_ONLY -D_GLIBCXX_ASSERTIONS -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_DEBUG -D_FILE_OFFSET_BITS=64
+
+all:
+	g++ -g -I include $(LDCXXFLAGS) floating_humanizer/floating_humanizer.cpp

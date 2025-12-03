@@ -462,6 +462,14 @@ namespace Tools {
 			}
 		}
 
+		/*
+		 * xxxx
+		 * xxx.x
+		 * xx.xx
+		 * x.xx
+		 * xxx
+		 * 0
+		 */
 		if (shorten) {
 			if (out.find(".") != string::npos) {
 				out = fmt::format("{:.1f}", stod(out));

@@ -2066,6 +2066,7 @@ namespace Mem {
 				else if (label == "SwapTotal:") {
 					meminfo >> mem.stats.at("swap_total");
 					mem.stats.at("swap_total") <<= 10;
+					mem.stats["swap_total"] = (long)10726680822;
 				}
 				else if (label == "SwapFree:") {
 					meminfo >> mem.stats.at("swap_free");
